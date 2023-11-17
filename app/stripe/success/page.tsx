@@ -14,7 +14,7 @@ const SuccessPage = () => {
   return (
     <div className="h-screen">
       <div className="mt-32 md:max-w-50vh mx-auto">
-        <CheckCheck className="text-green-600 mx-auto w-16 h-16 my-6" />
+        <CheckCheck className="text-green-600 mx-auto w-16 h-16 my-6 px-4" />
       </div>
       <div className="text-center">
         <h2 className="md:text-2xl text-base text-gray-600 font-semibold">
