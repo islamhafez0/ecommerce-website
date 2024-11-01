@@ -9,7 +9,7 @@ import Footer from "./components/Footer";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "swift commerce",
+  title: "Shoppr",
 };
 
 const date = new Date().getFullYear();
@@ -23,10 +23,14 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <CartProvider>
-          <Navbar />
+          <main className="h-screen flex flex-col justify-between">
+            <div role="main">
+              <Navbar />
+              {children}
+            </div>
+            <Footer />
+          </main>
           <ShoppingCartModal />
-          {children}
-          <Footer />
         </CartProvider>
       </body>
     </html>

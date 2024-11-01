@@ -18,7 +18,7 @@ const Navbar = () => {
     <header className="border-b mb-8">
       <div className="flex justify-between items-center px-4 max-w-2xl sm:px-5 lg:max-w-7xl mx-auto">
         <Link href="/" className="font-bold text-2xl md:text-4xl">
-          Swift<span className="text-primary">Commerce</span>
+          Shop<span className="text-primary">pr</span>
         </Link>
         <nav className="hidden gap-12 lg:flex 2xl:ml-16">
           {links.map((link, index) => (

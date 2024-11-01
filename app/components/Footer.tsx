@@ -5,12 +5,12 @@ import goglePlayImage from "../assets/play.jpg";
 import playStoreImage from "../assets/app.jpg";
 import cardsImage from "../assets/cards.png";
 import { Twitter, Instagram, Facebook, Copyright } from "lucide-react";
-const date = new Date().getFullYear();
+const currentYear = new Date().getFullYear();
 const Footer = () => {
   return (
     <div className="mx-auto max-w-2xl px-4 sm:pb-6 lg:max-w-7xl lg:px-8 border-t-2 py-8">
       <Link href="/" className="font-bold text-2xl md:text-4xl">
-        Swift<span className="text-primary">Commerce</span>
+        Shop<span className="text-primary">pr</span>
       </Link>
       <div className="grid mt-6 grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-4">
         <div>
@@ -36,7 +36,9 @@ const Footer = () => {
             </li>
             <li className="text-gray-600 mt-2">
               <span className="font-bold text-gray-800 text-sm">Website:</span>{" "}
-              <Link href="/">EslamHafez</Link>
+              <a href="https://eslamhafez-portfolio.web.app" target="_blank">
+                EslamHafez
+              </a>
             </li>
           </ul>
           <div className="flex items-center gap-4 mt-6">
@@ -123,7 +125,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="flex items-center gap-1 text-gray-400 lg:justify-start lg:mt-0 justify-center mt-5">
-        <Copyright size={20} /> <span>Eslam Hafez {date}</span>
+        <Copyright size={20} /> <span>Eslam Hafez {currentYear}</span>
       </div>
     </div>
   );
